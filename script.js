@@ -1,10 +1,10 @@
 const showMoreBtn = document.getElementById('showMoreBtn');
 const additionalInfo = document.createElement('p');
-additionalInfo.textContent = 'Playrix, Dublin (remote).';
-additionalInfo.style.display = 'none';
-
 const paragraph = document.getElementById('additionalInfo');
 const showMoreBtn2 = document.getElementById('showMoreBtn2');
+
+additionalInfo.textContent = 'Playrix, Dublin (remote).';
+additionalInfo.style.display = 'none';
 
 function toggleVisibility() {
   if (paragraph.style.visibility === 'hidden') {
