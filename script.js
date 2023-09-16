@@ -4,12 +4,15 @@ additionalInfo.textContent = 'Playrix, Dublin (remote).';
 additionalInfo.style.display = 'none';
 
 const paragraph = document.getElementById('additionalInfo');
+const showMoreBtn2 = document.getElementById('showMoreBtn2');
 
 function toggleVisibility() {
   if (paragraph.style.visibility === 'hidden') {
-    paragraph.style.visibility = 'visible';
+    paragraph.style.display = 'block';
+    showMoreBtn2.textContent = 'Убрать информации, но совсем чуть-чуть';
   } else {
-    paragraph.style.visibility = 'hidden';
+    paragraph.style.display = 'none';
+    showMoreBtn2.textContent = 'Показать больше информации 2';
   }
 }
 
