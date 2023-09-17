@@ -1,32 +1,16 @@
-const showMoreBtn = document.getElementById('showMoreBtn');
-const additionalInfo = document.createElement('p');
 const paragraph = document.getElementById('additionalInfo');
 const showMoreBtn2 = document.getElementById('showMoreBtn2');
 
-additionalInfo.textContent = 'Playrix, Dublin (remote).';
-additionalInfo.style.display = 'none';
 
 function toggleVisibility() {
-  if (paragraph.style.visibility === 'hidden') {
-    paragraph.style.display = 'block';
+  if (paragraph.style.display === 'none') {
     showMoreBtn2.textContent = 'Убрать информации, но совсем чуть-чуть';
+    paragraph.style.display = 'block';
   } else {
+    showMoreBtn2.textContent = 'Показать больше информации';
     paragraph.style.display = 'none';
-    showMoreBtn2.textContent = 'Показать больше информации 2';
   }
 }
 
 
 
-
-showMoreBtn.addEventListener('click', function() {
-  if (additionalInfo.style.display === 'none') {
-    additionalInfo.style.display = 'block';
-    showMoreBtn.textContent = 'Убрать информации, но совсем чуть-чуть';
-  } else {
-    additionalInfo.style.display = 'none';
-    showMoreBtn.textContent = 'Показать больше информации';
-  }
-});
-
-document.body.appendChild(additionalInfo);
