@@ -3,9 +3,10 @@
 <head>
   <title>Semenov's test page</title>
     <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script_foto.js"></script>
 </head>
-<body>
+<body onload="changeSlide(0)">
   <h1>Семенов Антон</h1>
   <div class="slider">
   <img id="img-1" src="foto1.png" alt="Image 1"/>
@@ -30,12 +31,16 @@
   <button id="showMoreBtn2" onclick="toggleVisibility()" >Показать больше информации</button>
 
 
-  <div id="additionalInfo" style="display: none;"><ul>
-        <li>User Acquisition Team Lead in Playrix, Dublin (remote).
+  <div id="additionalInfo" style="display: none;">
+      <p><b> Опыт работы. </b>  </p>
+      <ul>
+          <li>User Acquisition Team Lead in Playrix, Dublin (remote).
+          <li>CMO в «Компьютерная Академия ШАГ», Россия
+          <li>CEO в Музей занимательной науки «Экспериментус»
       </ul>
   </div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
 
